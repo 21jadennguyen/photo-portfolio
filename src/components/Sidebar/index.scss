@@ -96,10 +96,14 @@
       }
     }
 
-    a.active {
-      svg {
-        color: #ffd700;
+    a.graffiti-link {
+      &:after {
+        content: 'GRAFFITI';
       }
+    }
+
+    a.active {
+      color: #ffd700;
     }
   }
 

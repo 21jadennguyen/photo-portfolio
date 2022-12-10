@@ -12,7 +12,7 @@ import {
   fa5,
   faCalendar,
   faBars,
-  faClose,
+  faSprayCan
 } from '@fortawesome/free-solid-svg-icons'
 
 import { NavLink } from 'react-router-dom'
@@ -53,12 +53,14 @@ const Sidebar = () => {
         >
           <FontAwesomeIcon icon={fa5} color="#4d4d4e" />
         </NavLink>
-        <FontAwesomeIcon 
+        <NavLink
+          activeclassname="active"
+          className="graffiti-link"
+          to="/graffiti"
           onClick={() => setShowNav(false)}
-          icon={faClose}
-          color="#ffd700"
-          size="3x"
-          className='close-icon' />
+        >
+          <FontAwesomeIcon icon={faSprayCan} color="#4d4d4e" />
+        </NavLink>
       </nav>
       <ul>
         <li>
